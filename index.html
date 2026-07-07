@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acmedics Development Centre | Child Early Intervention & Parent Coaching</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Acmedics Development Centre partners with families to support children with autism, speech delays, ADHD, and learning differences through evidence-based speech therapy, parent coaching, and specialized resources.">
+  <meta name="keywords" content="early intervention, speech delay, autism, ADHD, parent coaching, child development lagos, special needs education nigeria, learning difficulties therapy">
+  <meta name="author" content="Happiness Oredipe">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://acmedics.com/">
+  <meta property="og:title" content="Acmedics Development Centre | Child Early Intervention & Parent Coaching">
+  <meta property="og:description" content="Helping every child reach their potential through personalized intervention, therapy, parent coaching, and evidence-based resources.">
+  <meta property="og:image" content="assets/hero_illustration.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://acmedics.com/">
+  <meta property="twitter:title" content="Acmedics Development Centre | Child Early Intervention & Parent Coaching">
+  <meta property="twitter:description" content="Helping every child reach their potential through personalized intervention, therapy, parent coaching, and evidence-based resources.">
+  <meta property="twitter:image" content="assets/hero_illustration.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+     1. NAVIGATION NAVBAR
+     ========================================== -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="logoLink">
+        <img src="assets/logo.png" alt="Acmedics Development Centre Logo">
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active-page">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">Meet the Founder</a></li>
+          <li><a href="shop.html" class="nav-link">Shop Resources</a></li>
+          <li><a href="book.html" class="nav-link">Book Assessment</a></li>
+          <!-- Mobile CTA actions nested inside the menu drawer -->
+          <li class="nav-actions-mobile">
+            <a href="book.html" class="btn btn-primary btn-sm">Book Consultation</a>
+            <a href="https://wa.me/2348067616756" target="_blank" class="btn btn-whatsapp btn-sm">
+              WhatsApp Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="book.html" class="btn btn-primary btn-sm">Book Consultation</a>
+        <a href="https://wa.me/2348067616756" target="_blank" class="btn btn-whatsapp btn-sm">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+     2. HERO SECTION
+     ========================================== -->
+  <section class="hero" id="home">
+    <div class="container grid-2">
+      <div class="hero-content reveal">
+        <div class="badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 4px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          Lagos, Nigeria &amp; Online Worldwide
+        </div>
+        <h1 class="hero-title">
+          Helping Every Child Reach Their <span>Potential</span>
+        </h1>
+        <p class="hero-desc">
+          Acmedics Development Centre partners with families to help children with speech delay, autism, ADHD, developmental delays, and other learning differences thrive through personalized intervention, therapy, parent coaching, and practical family support.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+          <a href="https://wa.me/2348067616756?text=Hello%20Acmedics%2C%20I%20would%20like%20to%20enquire%20about%20your%20developmental%20support%20services." target="_blank" class="btn btn-outline btn-whatsapp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.966a9.89 9.89 0 0 0-6.98-2.878C5.234 1.962.81 6.333.806 11.763c-.001 1.67.46 3.3 1.336 4.729l-.955 3.49 3.585-.929zm14.073-6.685c-.328-.164-1.942-.958-2.242-1.069-.3-.109-.519-.164-.738.164-.219.328-.847 1.069-1.039 1.288-.192.219-.384.246-.71.083-.327-.164-1.385-.51-2.637-1.627-.975-.87-1.633-1.944-1.825-2.272-.192-.328-.02-.505.144-.668.148-.147.328-.383.493-.575.164-.192.219-.328.328-.547.11-.219.055-.411-.027-.575-.082-.164-.738-1.78-.975-2.355-.262-.628-.522-.533-.715-.544l-.612-.01c-.219 0-.575.083-.876.411-.3.328-1.149 1.123-1.149 2.738 0 1.615 1.176 3.176 1.341 3.395.164.22 2.313 3.532 5.6 4.95.782.338 1.393.54 1.868.69.786.25 1.5.215 2.064.13.629-.095 1.942-.794 2.216-1.533.273-.739.273-1.37.19-1.506-.083-.137-.3-.219-.628-.383z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual reveal delay-200">
+        <img src="assets/hero_illustration.jpg" alt="Heartwarming illustration of a mother and child playing together with blocks in a warm room">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     3. TRUST BANNER
+     ========================================== -->
+  <div class="trust-banner">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          </div>
+          <span class="trust-text">15+ Years Experience</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </div>
+          <span class="trust-text">Supporting Families Globally</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm1-15h-2v6h2V7zm0 8h-2v2h2v-2z"/></svg>
+          </div>
+          <span class="trust-text">Evidence-Based Approach</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H9V9h4V5h2v4h4v2z"/></svg>
+          </div>
+          <span class="trust-text">Online &amp; In-Person Support</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <span class="trust-text">Parent-Centred Care</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+     4. ABOUT SECTION
+     ========================================== -->
+  <section class="about section-padding" id="about">
+    <div class="container grid-2">
+      <div class="reveal">
+        <span class="section-subtitle">Who We Are</span>
+        <h2 class="section-title">Empowering Families, Transforming Lives</h2>
+        <p class="section-desc" style="margin-left: 0; text-align: left; margin-bottom: 24px;">
+          Acmedics Development Centre exists to bridge the gap between clinical intervention and everyday home life. We believe that a child's progress accelerates when parents are equipped with professional knowledge, practical tools, and a caring, evidence-based support network.
+        </p>
+        <p class="section-desc" style="margin-left: 0; text-align: left; margin-bottom: 0;">
+          Whether online or in-person, our programs are designed to accommodate your family's dynamic while maintaining scientific rigor and compassionate engagement.
+        </p>
+      </div>
+      <div class="about-features reveal delay-200">
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm8.32 8.26L12 15.8 3.68 11.26 1.95 12.2l10.05 5.47 10.05-5.47-1.73-.94z"/></svg>
+          </div>
+          <div class="about-feature-content">
+            <h4>Our Mission</h4>
+            <p>To equip families with the knowledge, tools, and support they need to help their children thrive at home, in school, and in everyday life.</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <div class="about-feature-content">
+            <h4>Our Vision</h4>
+            <p>A world where children with developmental differences are fully understood, supported, and celebrated for their unique strengths and contributions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     5. MEET THE FOUNDER
+     ========================================== -->
+  <section class="founder section-padding" id="founder">
+    <div class="container grid-2">
+      <div class="founder-img-container reveal">
+        <div class="founder-img-frame">
+          <img src="assets/founder_2.jpg" alt="Happiness Oredipe smiling with hands on her chin">
+        </div>
+        <div class="founder-badge">Happiness Oredipe</div>
+      </div>
+      <div class="founder-bio reveal delay-200">
+        <span class="section-subtitle">Meet the Founder</span>
+        <h3>Happiness Oredipe</h3>
+        <p class="founder-title">Educator, Child Development Coach, and Mother</p>
+        
+        <p class="founder-text">
+          Happiness Oredipe is an experienced educator and child development coach with over 15 years of professional dedication to early child education and special needs support.
+        </p>
+        <p class="founder-text">
+          Beyond her professional qualifications, Happiness's deepest drive is personal. As a mother of four, including children raised with autism and speech delay, she understands the emotional hurdles, diagnostic fears, and triumphs that parents go through every single day.
+        </p>
+        <p class="founder-text">
+          She has supported families across multiple countries, developing practical, evidence-based tools that parents can execute without feeling overwhelmed.
+        </p>
+        
+        <div class="founder-journey">
+          <p>
+            "My personal journey raising children with autism taught me that parents are a child's most impactful therapists. At Acmedics, we don't just treat children; we empower and coach parents to make everyday routines therapeutic."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     6. SERVICES & PRODUCTS SECTION
+     ========================================== -->
+  <section class="services section-padding" id="services">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-subtitle">What We Offer</span>
+        <h2 class="section-title">Personalized Therapy &amp; Early Intervention</h2>
+        <p class="section-desc">
+          Professional development services and resources designed around the developmental needs of your child, available in-person in Lagos and virtually worldwide.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        
+        <!-- Service 1 -->
+        <div class="service-card reveal">
+          <div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+            </div>
+            <h3>Speech Therapy</h3>
+            <p>Helping children build essential communication, expressive speech, and social language skills to express themselves confidently.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            Book Consultation
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal delay-100">
+          <div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm8.32 8.26L12 15.8 3.68 11.26 1.95 12.2l10.05 5.47 10.05-5.47-1.73-.94z"/></svg>
+            </div>
+            <h3>Special Needs Education</h3>
+            <p>Individualized educational learning programs structured around your child's cognitive strengths and developmental milestones.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            Book Consultation
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal delay-200">
+          <div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.83 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <h3>Parent Coaching</h3>
+            <p>Empowering you with daily, actionable techniques, and routine adjustments to confidently support your child's growth at home.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            Book Consultation
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 4 (Spotlight Double-Wide Card for Flashcards) -->
+        <div class="service-card spotlight reveal">
+          <div class="spotlight-info">
+            <span class="spotlight-badge">Best Seller</span>
+            <h3>My First 300 Words</h3>
+            <p style="margin-bottom: 20px;">
+              Our flagship speech and language development resource. 300 double-sided, premium cards designed to turn daily home routines into active milestone builders. Perfect for children with speech delays, autism, down syndrome, and early learners.
+            </p>
+            <div style="display: flex; gap: 12px; margin-bottom: 20px;">
+              <a href="https://wa.me/2348067616756?text=Hello%20Acmedics%2C%20I%20would%20like%20to%20purchase%20the%20My%20First%20300%20Words%20flashcards." target="_blank" class="btn btn-primary btn-sm">Order flashcards</a>
+              <a href="#contact" class="btn btn-outline btn-sm">Enquire Details</a>
+            </div>
+          </div>
+          <div class="spotlight-img">
+            <img src="assets/my_first_300_words.jpg" alt="My First 300 Words development flashcards front and back packaging box showing child development guidelines">
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card reveal delay-100">
+          <div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H9V9h4V5h2v4h4v2z"/></svg>
+            </div>
+            <h3>Parent Therapy Guide</h3>
+            <p>A comprehensive digital blueprint written by expert facilitators to teach you clinical exercises that you can practice easily at home.</p>
+          </div>
+          <a href="https://wa.me/2348067616756?text=Hello%20Acmedics%2C%20I%20am%20interested%20in%20the%20Parent%20Therapy%20Guide%20digital%20resource." target="_blank" class="service-link">
+            Buy Digital Guide
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card reveal">
+          <div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+            </div>
+            <h3>Shadow Services</h3>
+            <p>In-school facilitator support to help special needs students integrate, follow lessons, focus, and interact naturally with peers.</p>
+          </div>
+          <a href="#contact" class="service-link">
+            Book Consultation
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card reveal delay-100">
+          <div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <h3>Guided Parent Community</h3>
+            <p>Access weekly coaching sessions, professional advice, and a warm peer group to share developmental progress and milestones.</p>
+          </div>
+          <a href="#community" class="service-link">
+            Join the Community
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="service-card reveal delay-200">
+          <div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 9h-8V9h8v2zm-2 4h-4v-2h4v2zm2-8H8V4h10v3z"/></svg>
+            </div>
+            <h3>Specialist Books</h3>
+            <p>Written resource materials and guidebooks built to walk parents and school teachers step-by-step through child coaching.</p>
+          </div>
+          <a href="https://wa.me/2348067616756?text=Hello%20Acmedics%2C%20I%20am%20interested%20in%20your%20special%20needs%20education%20books." target="_blank" class="service-link">
+            Order Books
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     7. OUR PROCESS (HOW WE HELP)
+     ========================================== -->
+  <section class="process section-padding" id="process">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-subtitle">How We Work</span>
+        <h2 class="section-title">Your Child's Journey to Success</h2>
+        <p class="section-desc">
+          We use a systematic, family-centered pathway to understand your child's needs and build long-term development.
+        </p>
+      </div>
+
+      <div class="process-timeline">
+        
+        <!-- Step 1 -->
+        <div class="process-step reveal">
+          <div class="process-number">1</div>
+          <h3>Book Consultation</h3>
+          <p>Schedule a one-on-one session to discuss your observations and target developmental improvements.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step reveal delay-100">
+          <div class="process-number">2</div>
+          <h3>Child Assessment</h3>
+          <p>Our professionals evaluate your child's language skills, attention patterns, and learning habits.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step reveal delay-200">
+          <div class="process-number">3</div>
+          <h3>Personalized Plan</h3>
+          <p>We build a custom educational and therapeutic program tailored to support your child's milestone goals.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step reveal delay-300">
+          <div class="process-number">4</div>
+          <h3>Parent Support</h3>
+          <p>Receive ongoing home coaching resources, weekly reports, and access to our parenting community.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     8. WHY CHOOSE ACMEDICS
+     ========================================== -->
+  <section class="why-choose section-padding">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-subtitle">Why Acmedics</span>
+        <h2 class="section-title">Comprehensive, Compassionate Care</h2>
+        <p class="section-desc">
+          We combine clinical excellence with parent training to ensure your child receives continuous support.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        
+        <!-- Card 1 -->
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Evidence-Based Methods</h3>
+            <p>Every therapy session and material is grounded in proven cognitive-behavioral and speech building strategies.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="benefit-card reveal delay-100">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zm0-8h14V7H7v2z"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Personalized Learning</h3>
+            <p>We do not believe in one-size-fits-all. Every learning syllabus is crafted specifically for your child's goals.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="benefit-card reveal delay-200">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Family-Centred Support</h3>
+            <p>We work closely with parents and siblings, providing resources to ensure developmental therapy happens daily.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Global Experience</h3>
+            <p>Our methodologies are trusted by families across West Africa, Europe, the UK, and North America.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="benefit-card reveal delay-100">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Compassionate Care</h3>
+            <p>We create a warm, anxiety-free learning space where children feel safe to try, learn, and grow.</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="benefit-card reveal delay-200">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+          </div>
+          <div class="benefit-content">
+            <h3>Practical Coaching</h3>
+            <p>No dense medical jargon. We give you easy, actionable tips you can easily integrate into meals and playtime.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     9. GLOBAL REACH
+     ========================================== -->
+  <section class="reach section-padding">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-subtitle">Global Impact</span>
+        <h2 class="section-title">Supporting Families Worldwide</h2>
+        <p class="section-desc">
+          Through modern virtual consultation and localized coaching sessions, we support families globally.
+        </p>
+      </div>
+
+      <div class="reach-grid reveal delay-200">
+        <div class="country-badges">
+          <span class="country-tag">🇳🇬 Nigeria</span>
+          <span class="country-tag">🇬🇧 United Kingdom</span>
+          <span class="country-tag">🇺🇸 United States</span>
+          <span class="country-tag">🇨🇦 Canada</span>
+          <span class="country-tag">🇦🇪 United Arab Emirates</span>
+          <span class="country-tag">🇮🇪 Ireland</span>
+          <span class="country-tag">🇮🇹 Italy</span>
+          <span class="country-tag">🇪🇸 Spain</span>
+        </div>
+        
+        <div class="reach-stats">
+          <div class="stat-item">
+            <h4>15+</h4>
+            <p>Years of Service</p>
+          </div>
+          <div class="stat-item">
+            <h4>700+</h4>
+            <p>Families Empowered</p>
+          </div>
+          <div class="stat-item">
+            <h4>100%</h4>
+            <p>Evidence-Based Plans</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     10. COMMUNITY SECTION
+     ========================================== -->
+  <section class="community section-padding" id="community">
+    <div class="container">
+      <div class="community-banner reveal">
+        <div class="community-info">
+          <h2>Join 700+ Parents Raising Children with Confidence</h2>
+          <p>
+            You don't have to walk this developmental journey alone. Become a member of our free online parent community to receive professional guidance, regular encouragement, and milestone templates.
+          </p>
+          <ul class="community-benefits">
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Weekly specialist advice
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Encouraging parent stories
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Downloadable resources
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Supportive Q&amp;A sessions
+            </li>
+          </ul>
+        </div>
+        <div class="community-action">
+          <a href="https://wa.me/2348067616756?text=Hello%20Acmedics%2C%20I%20would%20like%20to%20join%20your%20Free%20Parent%20Community." target="_blank" class="btn btn-primary btn-sm" style="background-color: var(--color-accent); border: none;">
+            Join Free Community
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     11. TESTIMONIALS CAROUSEL
+     ========================================== -->
+  <section class="testimonials section-padding" id="testimonials">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-subtitle">Parent Stories</span>
+        <h2 class="section-title">Success Stories from Our Families</h2>
+        <p class="section-desc">
+          Read heartwarming, authentic reviews from parents who partnered with us to accelerate their child's language development.
+        </p>
+      </div>
+
+      <div class="carousel-container reveal">
+        <button class="carousel-btn carousel-btn-prev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+        
+        <div class="carousel-wrapper">
+          <div class="carousel-track">
+            
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-quote">
+                  "Our son was diagnosed with speech delay and had limited social interaction at age three. After six months of Speech Therapy and Parent Coaching with Happiness, his vocabulary has skyrocketed. He now forms full sentences and makes requests easily!"
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">CO</div>
+                  <span class="author-name">Chinyere O.</span>
+                  <span class="author-loc">Lagos, Nigeria</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-quote">
+                  "Being an expat family, finding a clinic that understood our child's autism diagnostic challenges was hard. Acmedics online coaching was a lifesaver. Happiness taught us how to redesign our play habits. The 'My First 300 Words' cards are part of our everyday routine."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">AM</div>
+                  <span class="author-name">Aisha M.</span>
+                  <span class="author-loc">London, United Kingdom</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-quote">
+                  "The shadow facilitator services provided by Acmedics changed the school experience for our daughter with learning differences. She went from feeling isolated to active classroom participation. We are forever grateful to Happiness and her incredible team."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">TO</div>
+                  <span class="author-name">Tobi O.</span>
+                  <span class="author-loc">Lekki, Lagos</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="carousel-btn carousel-btn-next" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+
+        <div class="carousel-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     12. FAQ SECTION
+     ========================================== -->
+  <section class="faq section-padding" id="faq">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-subtitle">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">
+          Find quick answers to common questions about our therapy styles, session structures, and resources.
+        </p>
+      </div>
+
+      <div class="faq-accordion reveal">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <h3>What age groups do you support?</h3>
+            <div class="faq-icon">
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="faq-content">
+            <p>We specialize in early intervention, supporting children from toddlers (18 months) to early teens (14 years). The early years (up to 8 years) are the most critical window for developmental progress.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <h3>Do you offer online therapy?</h3>
+            <div class="faq-icon">
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="faq-content">
+            <p>Yes. We provide virtual parent coaching and guidance sessions globally. Since early intervention relies heavily on home exercises, virtual sessions focus on training parents in speech-boosting activities.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <h3>How do I join the Guided Community?</h3>
+            <div class="faq-icon">
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="faq-content">
+            <p>You can click our "Join Free Community" buttons. This will direct you to message us on WhatsApp, and our facilitator will send you an invite to the active community platform.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <h3>Do you create personalized learning plans?</h3>
+            <div class="faq-icon">
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="faq-content">
+            <p>Absolutely. After a thorough initial assessment, we outline your child's specific strengths, obstacles, and milestone goals. We then create an Individualized Development Plan (IDP) tailored exclusively for them.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <h3>Do you support families outside Nigeria?</h3>
+            <div class="faq-icon">
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="faq-content">
+            <p>Yes. We have clients across the UK, USA, UAE, Canada, Ireland, Italy, Spain, and other parts of Africa. Our digital resources and virtual assessments make international support seamless.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <h3>How do I book an assessment?</h3>
+            <div class="faq-icon">
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="faq-content">
+            <p>Simply fill out the consultation form below, or click any "Chat on WhatsApp" button to connect directly with Happiness Oredipe to find a suitable calendar slot.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     13. CONTACT SECTION
+     ========================================== -->
+  <section class="contact section-padding" id="contact">
+    <div class="container grid-2">
+      <div class="reveal">
+        <span class="section-subtitle">Get in Touch</span>
+        <h2 class="section-title" style="margin-bottom: 24px;">Start Your Child's Journey Today</h2>
+        <p class="section-desc" style="margin-left: 0; text-align: left; margin-bottom: 40px;">
+          Have questions about speech delays, therapy, or shadow support? Drop your concerns below. We will read your message and connect via WhatsApp or Email.
+        </p>
+        
+        <div class="contact-info">
+          
+          <!-- Info Item 1 -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+            </div>
+            <div class="contact-card-details">
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/2348067616756" target="_blank">08067616756</a></p>
+            </div>
+          </div>
+
+          <!-- Info Item 2 -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div class="contact-card-details">
+              <h4>Email</h4>
+              <p><a href="mailto:acmedicsspecialneedsprogramme@gmail.com">acmedicsspecialneedsprogramme@gmail.com</a></p>
+            </div>
+          </div>
+
+          <!-- Info Item 3 -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div class="contact-card-details">
+              <h4>Location</h4>
+              <p>Lagos, Nigeria (Worldwide Virtual Services)</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Consultation Form -->
+      <div class="contact-form-container reveal delay-200">
+        <form id="consultationForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="formName">Full Name</label>
+              <input type="text" id="formName" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Email Address</label>
+              <input type="email" id="formEmail" placeholder="Enter your email" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="formPhone">Phone Number</label>
+              <input type="tel" id="formPhone" placeholder="e.g. +234 806 761 6756" required>
+            </div>
+            <div class="form-group">
+              <label for="formConcern">Primary Concern</label>
+              <select id="formConcern" required>
+                <option value="" disabled selected>Select concern...</option>
+                <option value="Speech Delay">Speech Delay</option>
+                <option value="Autism Support">Autism / ASD</option>
+                <option value="ADHD / Attention">ADHD Support</option>
+                <option value="Learning Difficulty">Learning Difficulties</option>
+                <option value="Other / General">Other Developmental Concern</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="formMessage">Describe Your Child's Needs</label>
+            <textarea id="formMessage" placeholder="Please share details such as your child's age and any milestones or observations you have..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Book Consultation via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+     14. FOOTER
+     ========================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Acmedics Logo White">
+          <p>
+            Early intervention therapy, speech therapy, and personalized parent coaching designed to help every child reach their developmental potential.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com/HappinessOredipe" class="social-icon" target="_blank" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://tiktok.com/@HappinessOredipe" class="social-icon" target="_blank" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.86-.74-3.99-1.72-.08-.07-.17-.17-.24-.26v6.52c.03 2.11-.74 4.31-2.42 5.66-1.77 1.44-4.26 1.84-6.41 1.09-2.27-.78-4.04-2.81-4.47-5.18-.55-2.85.74-5.96 3.26-7.25.96-.5 2.02-.73 3.1-.71v4.13c-.88-.04-1.82.26-2.43.93-.8.84-.9 2.19-.3 3.19.64 1.09 2.02 1.62 3.19 1.25 1-.31 1.74-1.28 1.74-2.35-.02-3.15-.01-6.3-.01-9.45.01-1.63.01-3.25.01-4.88z"/></svg>
+            </a>
+            <a href="https://facebook.com/Happiness Oredipe" class="social-icon" target="_blank" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/Happiness Oredipe" class="social-icon" target="_blank" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Speech Therapy</a></li>
+            <li><a href="services.html">Special Education</a></li>
+            <li><a href="services.html">Parent Coaching</a></li>
+            <li><a href="services.html">Shadow Facilitator</a></li>
+            <li><a href="about.html">Guided Community</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Meet the Founder</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="shop.html">Shop Resources</a></li>
+            <li><a href="book.html">Book Assessment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Business Hours</h4>
+          <ul class="footer-hours-list">
+            <li><span>Monday - Friday</span> <span>6:00 AM - 10:00 PM</span></li>
+            <li><span>Saturday</span> <span>9:00 AM - 5:00 PM</span></li>
+            <li><span>Sunday</span> <span>9:00 AM - 5:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Acmedics Development Centre. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+     15. PERSISTENT FLOATING ACTIONS
+     ========================================== -->
+  <!-- WhatsApp Floating Action Button -->
+  <a href="https://wa.me/2348067616756?text=Hello%20Acmedics%2C%20I%20would%20like%20to%20chat%20about%20your%20early%20intervention%20support." class="whatsapp-fab" target="_blank" aria-label="Chat with Acmedics on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.966a9.89 9.89 0 0 0-6.98-2.878C5.234 1.962.81 6.333.806 11.763c-.001 1.67.46 3.3 1.336 4.729l-.955 3.49 3.585-.929zm14.073-6.685c-.328-.164-1.942-.958-2.242-1.069-.3-.109-.519-.164-.738.164-.219.328-.847 1.069-1.039 1.288-.192.219-.384.246-.71.083-.327-.164-1.385-.51-2.637-1.627-.975-.87-1.633-1.944-1.825-2.272-.192-.328-.02-.505.144-.668.148-.147.328-.383.493-.575.164-.192.219-.328.328-.547.11-.219.055-.411-.027-.575-.082-.164-.738-1.78-.975-2.355-.262-.628-.522-.533-.715-.544l-.612-.01c-.219 0-.575.083-.876.411-.3.328-1.149 1.123-1.149 2.738 0 1.615 1.176 3.176 1.341 3.395.164.22 2.313 3.532 5.6 4.95.782.338 1.393.54 1.868.69.786.25 1.5.215 2.064.13.629-.095 1.942-.794 2.216-1.533.273-.739.273-1.37.19-1.506-.083-.137-.3-.219-.628-.383z"/></svg>
+  </a>
+
+  <!-- Mobile Sticky Bottom CTA Bar -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar">
+    <a href="book.html" class="btn btn-primary btn-sm">Book Consultation</a>
+    <a href="https://wa.me/2348067616756?text=Hello%20Acmedics%2C%20I%20would%20like%20to%20book%20a%20consultation%20for%20my%20child." target="_blank" class="btn btn-whatsapp btn-sm">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.966a9.89 9.89 0 0 0-6.98-2.878C5.234 1.962.81 6.333.806 11.763c-.001 1.67.46 3.3 1.336 4.729l-.955 3.49 3.585-.929zm14.073-6.685c-.328-.164-1.942-.958-2.242-1.069-.3-.109-.519-.164-.738.164-.219.328-.847 1.069-1.039 1.288-.192.219-.384.246-.71.083-.327-.164-1.385-.51-2.637-1.627-.975-.87-1.633-1.944-1.825-2.272-.192-.328-.02-.505.144-.668.148-.147.328-.383.493-.575.164-.192.219-.328.328-.547.11-.219.055-.411-.027-.575-.082-.164-.738-1.78-.975-2.355-.262-.628-.522-.533-.715-.544l-.612-.01c-.219 0-.575.083-.876.411-.3.328-1.149 1.123-1.149 2.738 0 1.615 1.176 3.176 1.341 3.395.164.22 2.313 3.532 5.6 4.95.782.338 1.393.54 1.868.69.786.25 1.5.215 2.064.13.629-.095 1.942-.794 2.216-1.533.273-.739.273-1.37.19-1.506-.083-.137-.3-.219-.628-.383z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
