@@ -160,35 +160,44 @@ button, input, textarea, select {
 }
 
 /* Landing Page Hero Staggered Cascade */
-.hero-content .badge {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: hero-cascade 0.8s var(--transition-slow) 0.6s forwards;
-}
-
-.hero-content .hero-title {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: hero-cascade 0.8s var(--transition-slow) 0.75s forwards;
-}
-
-.hero-content .hero-desc {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: hero-cascade 0.8s var(--transition-slow) 0.9s forwards;
-}
-
+.hero-content .badge,
+.hero-content .hero-title,
+.hero-content .hero-desc,
 .hero-content .hero-btns {
   opacity: 0;
   transform: translateY(20px);
-  animation: hero-cascade 0.8s var(--transition-slow) 1.05s forwards;
+}
+
+.hero-content .hero-title,
+.hero-content .hero-desc {
+  transform: translateY(30px);
 }
 
 .hero-visual {
   opacity: 0;
   transform: scale(0.97) translateY(30px);
   filter: blur(10px);
-  animation: hero-visual-entrance 1.2s var(--transition-slow) 0.7s forwards;
+}
+
+/* Animations triggered when .page-loaded is added to body */
+.page-loaded .hero-content .badge {
+  animation: hero-cascade 0.8s var(--transition-slow) 0.1s forwards;
+}
+
+.page-loaded .hero-content .hero-title {
+  animation: hero-cascade 0.8s var(--transition-slow) 0.25s forwards;
+}
+
+.page-loaded .hero-content .hero-desc {
+  animation: hero-cascade 0.8s var(--transition-slow) 0.4s forwards;
+}
+
+.page-loaded .hero-content .hero-btns {
+  animation: hero-cascade 0.8s var(--transition-slow) 0.55s forwards;
+}
+
+.page-loaded .hero-visual {
+  animation: hero-visual-entrance 1.2s var(--transition-slow) 0.3s forwards;
 }
 
 @keyframes hero-cascade {
