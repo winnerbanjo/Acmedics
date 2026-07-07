@@ -1,22 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
-  // 1. PAGE PRELOADER FADE-OUT
+  // 1. PAGE PRELOADER REMOVED (Handled inline in HTML)
   // ==========================================
-  const preloader = document.getElementById('preloader');
-  
-  const fadeOutPreloader = () => {
-    if (preloader && !preloader.classList.contains('fade-out')) {
-      preloader.classList.add('fade-out');
-    }
-  };
-  
-  // Fade out once window assets are fully loaded
-  window.addEventListener('load', () => {
-    setTimeout(fadeOutPreloader, 600); // short delay for visual loading bar effect
-  });
-  
-  // Backup timeout: guarantee page loading in max 1.5s
-  setTimeout(fadeOutPreloader, 1500);
 
   // ==========================================
   // 2. STICKY GLASS HEADER & SCROLL BEHAVIOR

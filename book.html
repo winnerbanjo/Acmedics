@@ -21,6 +21,22 @@
       <div class="preloader-bar"><div class="preloader-progress"></div></div>
     </div>
   </div>
+  <script>
+    (function() {
+      var preloader = document.getElementById('preloader');
+      function fadeOut() {
+        if (preloader && !preloader.classList.contains('fade-out')) {
+          preloader.classList.add('fade-out');
+        }
+      }
+      if (document.readyState === 'complete') {
+        fadeOut();
+      } else {
+        window.addEventListener('load', fadeOut);
+        setTimeout(fadeOut, 1200);
+      }
+    })();
+  </script>
 
 
   <!-- ==========================================
