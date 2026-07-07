@@ -178,6 +178,18 @@ button, input, textarea, select {
 
 .hero-visual {
   animation: hero-visual-entrance 1.2s var(--transition-slow) 0.7s both;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--color-white);
+  background-color: var(--color-white);
+}
+
+.hero-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: calc(var(--radius-lg) - 4px);
 }
 
 @keyframes hero-cascade {
@@ -2361,3 +2373,201 @@ footer {
 .delay-200 { transition-delay: 200ms; }
 .delay-300 { transition-delay: 300ms; }
 .delay-400 { transition-delay: 400ms; }
+
+/* ==========================================
+   24. COMPREHENSIVE MOBILE RESPONSIVENESS OVERRIDES
+   ========================================== */
+@media (max-width: 768px) {
+  /* Prevent body horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  /* Hero section sizing and spacing */
+  .hero {
+    padding-top: calc(var(--header-height) + 30px);
+    padding-bottom: 50px;
+    min-height: auto;
+    display: block;
+  }
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 1.85rem !important;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .hero-desc {
+    font-size: 0.95rem !important;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  .hero-btns {
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .hero-visual {
+    margin-top: 36px;
+    max-width: 100%;
+    border-radius: var(--radius-md);
+    border-width: 3px;
+  }
+  .hero-visual img {
+    border-radius: calc(var(--radius-md) - 3px);
+  }
+  
+  /* Section paddings override */
+  .section-padding {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  
+  /* Header layout logo */
+  .logo img {
+    height: 36px !important;
+  }
+  header, header.scrolled {
+    height: 60px !important;
+  }
+  
+  /* Section headers */
+  .section-title {
+    font-size: 1.65rem !important;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .section-desc {
+    font-size: 0.95rem !important;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Grid margins */
+  .grid-2, .grid-3, .grid-4 {
+    gap: 20px !important;
+  }
+  
+  /* Alternating feature sections spacing */
+  .feature-row {
+    gap: 24px !important;
+  }
+  .feature-content {
+    text-align: center;
+  }
+  .feature-content h2 {
+    font-size: 1.65rem !important;
+    text-align: center;
+  }
+  .bullet-list {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .bullet-list li {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Form row vertical gap fix */
+  .form-row {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin-bottom: 0 !important;
+  }
+  .form-group {
+    margin-bottom: 16px !important;
+  }
+  
+  /* Process connector line hiding */
+  .process-timeline::before {
+    display: none !important;
+  }
+  .process-step {
+    margin-bottom: 16px;
+  }
+  .process-number {
+    width: 76px !important;
+    height: 76px !important;
+    font-size: 1.65rem !important;
+    margin-bottom: 12px !important;
+  }
+  
+  /* Testimonial slider layout fixes */
+  .testimonial-card {
+    padding: 24px 16px !important;
+    border-radius: var(--radius-md) !important;
+  }
+  .testimonial-quote {
+    font-size: 0.975rem !important;
+    line-height: 1.65 !important;
+    margin-bottom: 16px !important;
+  }
+  .author-avatar {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 1.1rem !important;
+  }
+  .carousel-dot {
+    width: 8px;
+    height: 8px;
+  }
+  .carousel-dot.active {
+    width: 18px;
+  }
+  
+  /* Global reach stats stacking divider */
+  .country-badges {
+    gap: 8px !important;
+  }
+  .country-tag {
+    padding: 6px 16px !important;
+    font-size: 0.85rem !important;
+  }
+  .reach-stats {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  .stat-item {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-grey-100);
+  }
+  .stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .stat-item h4 {
+    font-size: 2.25rem !important;
+  }
+  
+  /* Community CTA banner padding check */
+  .community-banner {
+    padding: 36px 20px !important;
+    gap: 24px !important;
+    border-radius: var(--radius-md) !important;
+  }
+  .community-info h2 {
+    font-size: 1.5rem !important;
+  }
+  .community-info p {
+    font-size: 0.95rem !important;
+  }
+  .community-benefits {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  
+  /* Footer column collapse spacing */
+  .footer-top {
+    gap: 30px !important;
+  }
+  .footer-col h4 {
+    margin-bottom: 12px !important;
+  }
+  .footer-hours-list {
+    gap: 6px !important;
+  }
+}
