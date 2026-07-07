@@ -1,20 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
-  // 1. STICKY GLASS HEADER & SCROLL BEHAVIOR
+  // 1. PAGE PRELOADER FADE-OUT
+  // ==========================================
+  const preloader = document.getElementById('preloader');
+  
+  const fadeOutPreloader = () => {
+    if (preloader && !preloader.classList.contains('fade-out')) {
+      preloader.classList.add('fade-out');
+    }
+  };
+  
+  // Fade out once window assets are fully loaded
+  window.addEventListener('load', () => {
+    setTimeout(fadeOutPreloader, 600); // short delay for visual loading bar effect
+  });
+  
+  // Backup timeout: guarantee page loading in max 1.5s
+  setTimeout(fadeOutPreloader, 1500);
+
+  // ==========================================
+  // 2. STICKY GLASS HEADER & SCROLL BEHAVIOR
   // ==========================================
   const header = document.querySelector('header');
   const mobileStickyBar = document.querySelector('.mobile-sticky-bar');
   const heroSection = document.getElementById('home') || document.querySelector('.page-hero');
   
   const handleScroll = () => {
-    // Shrink navbar and blur background on scroll
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
     
-    // Show mobile sticky CTAs when scrolled past hero
     if (heroSection) {
       const heroHeight = heroSection.offsetHeight;
       if (window.scrollY > heroHeight - 100) {
@@ -29,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   handleScroll();
 
   // ==========================================
-  // 2. ACTIVE NAVIGATION PAGE TRACKING
+  // 3. ACTIVE NAVIGATION PAGE TRACKING
   // ==========================================
   const currentPath = window.location.pathname;
   const navLinks = document.querySelectorAll('.nav-link');
@@ -44,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 3. MOBILE MENU DRAWER TOGGLE
+  // 4. MOBILE MENU DRAWER TOGGLE
   // ==========================================
   const navToggle = document.querySelector('.nav-toggle');
   const navMenu = document.querySelector('.nav-menu');
@@ -67,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 4. STATS COUNTER UP ANIMATION
+  // 5. STATS COUNTER UP ANIMATION
   // ==========================================
   const statsElements = document.querySelectorAll('.stat-item h4');
   
@@ -76,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const target = parseInt(rawVal, 10);
     if (isNaN(target)) return;
     
-    const suffix = rawVal.replace(/[0-9]/g, ''); // get "+" or "%" etc.
+    const suffix = rawVal.replace(/[0-9]/g, '');
     let count = 0;
     const duration = 1200; // ms
     const frameRate = 1000 / 60; // 60 FPS
@@ -102,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           animateCounter(entry.target);
-          observer.unobserve(entry.target); // run once
+          observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.5 });
@@ -111,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 5. INTERACTIVE 3D CARD TILT EFFECT (Desktop Only)
+  // 6. INTERACTIVE 3D CARD TILT EFFECT (Desktop Only)
   // ==========================================
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
   
@@ -123,13 +140,12 @@ document.addEventListener('DOMContentLoaded', () => {
       
       card.addEventListener('mousemove', (e) => {
         const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left; // x coordinate inside element
-        const y = e.clientY - rect.top;  // y coordinate inside element
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
         
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
         
-        // Calculate rotate degree (max 8 degrees tilt)
         const rotateX = ((centerY - y) / centerY) * 8;
         const rotateY = ((x - centerX) / centerX) * 8;
         
@@ -143,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 6. TESTIMONIAL CAROUSEL
+  // 7. TESTIMONIAL CAROUSEL
   // ==========================================
   const track = document.querySelector('.carousel-track');
   const slides = Array.from(document.querySelectorAll('.carousel-slide'));
@@ -237,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 7. ACCORDION FAQ
+  // 8. ACCORDION FAQ
   // ==========================================
   const faqItems = document.querySelectorAll('.faq-item');
   
@@ -261,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 8. SCROLL REVEAL OBSERVER
+  // 9. SCROLL REVEAL OBSERVER
   // ==========================================
   const revealElements = document.querySelectorAll('.reveal');
   
@@ -284,14 +300,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 9. RESOURCE SHOP FILTER CONTROLLER
+  // 10. RESOURCE SHOP FILTER CONTROLLER
   // ==========================================
   const filterBtns = document.querySelectorAll('.shop-filter-btn');
   const shopCards = document.querySelectorAll('.shop-card');
   
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Toggle active button
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       
@@ -316,7 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 10. MULTI-STEP BOOKING SCHEDULER
+  // 11. MULTI-STEP BOOKING SCHEDULER
   // ==========================================
   const bookingForm = document.getElementById('assessmentScheduler');
   const steps = Array.from(document.querySelectorAll('.booking-form-step'));
@@ -338,7 +353,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     nextBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        // Simple validation check before proceeding
         const currentInputs = steps[currentStep].querySelectorAll('input, select, textarea');
         let isValid = true;
         
@@ -362,7 +376,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
     
-    // Booking Form Submit Redirection
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
       
@@ -394,7 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 11. GENERAL CONTACT FORM REDIRECT
+  // 12. GENERAL CONTACT FORM REDIRECT
   // ==========================================
   const contactForm = document.getElementById('consultationForm');
   contactForm?.addEventListener('submit', (e) => {
